@@ -6,16 +6,16 @@ import { Provider } from 'react-redux';
 import App from 'components/App';
 import { store, persistor } from 'redux/store';
 import './index.css';
-// import ErrorBoundary from 'components/ErrorBoundary/ErrorBoundary';
+import ErrorBoundary from 'components/ErrorBoundary/ErrorBoundary';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <BrowserRouter>
-          {/* <ErrorBoundary fallback="There was an error"> */}
-          <App />
-          {/* </ErrorBoundary> */}
+          <ErrorBoundary fallback="There was an error">
+            <App />
+          </ErrorBoundary>
         </BrowserRouter>
       </PersistGate>
     </Provider>
