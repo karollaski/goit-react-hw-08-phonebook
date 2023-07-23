@@ -7,3 +7,22 @@
 .username {
   font-weight: 700;
 }
+
+.btnLogout {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  background-color: #1290f7;
+  color: #fff;
+  transition-property: transform;
+  transition-duration: 250ms;
+}
+
+.btnLogout:hover {
+  transform: scale(1.2);
+}
+
+.user {
+  color: #1290f7;
+}

@@ -4,6 +4,12 @@
   padding: 12px;
   font-weight: 700;
   color: #2a363b;
+  transition-property: color;
+  transition-duration: 250ms;
+}
+
+.link:hover {
+  color: #1290f7;
 }
 
 .link.active {
