@@ -51,7 +51,7 @@ const ContactForm = () => {
 
   return (
     <form className={css.form} onSubmit={handleSubmit}>
-      <label htmlFor={nameInputId}>
+      <label className={css.label} htmlFor={nameInputId}>
         Name
         <input
           className={css.form__input}
@@ -66,7 +66,7 @@ const ContactForm = () => {
         />
       </label>
 
-      <label htmlFor={numberInputId}>
+      <label className={css.label} htmlFor={numberInputId}>
         Number
         <input
           className={css.form__input}

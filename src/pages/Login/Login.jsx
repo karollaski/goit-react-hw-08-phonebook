@@ -1,11 +1,14 @@
 import LoginForm from 'components/LoginForm/LoginForm';
+import css from './Login.module.css';
 
 const Login = () => {
   return (
-    <>
-      <title>Login</title>
-      <LoginForm />
-    </>
+    <div className={css.container}>
+      <div className={css.wrapper}>
+        <h2 className={css.title}>Login</h2>
+        <LoginForm />
+      </div>
+    </div>
   );
 };
 
